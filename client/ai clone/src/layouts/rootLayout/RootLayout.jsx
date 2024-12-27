@@ -1,11 +1,12 @@
 import { Link, Outlet } from "react-router-dom";
+import logo from "../../assets/logo.svg";
 
 const RootLayout = () => {
   return (
     <div>
       <header>
         <Link to="/">
-          <img src="" alt="" />
+          <img src={logo} alt="" />
           <span>Talkify</span>
         </Link>
       </header>
