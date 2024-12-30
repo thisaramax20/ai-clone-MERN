@@ -1,12 +1,6 @@
 import { Link, Outlet } from "react-router-dom";
 import logo from "../../assets/logo.svg";
-import {
-  ClerkProvider,
-  SignedIn,
-  SignedOut,
-  SignInButton,
-  UserButton,
-} from "@clerk/clerk-react";
+import { ClerkProvider, SignedIn, UserButton } from "@clerk/clerk-react";
 
 //clerk authentication
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
@@ -25,9 +19,6 @@ const RootLayout = () => {
             <span>Talkify</span>
           </Link>
           <div>
-            <SignedOut>
-              <SignInButton />
-            </SignedOut>
             <SignedIn>
               <UserButton />
             </SignedIn>
