@@ -18,9 +18,6 @@ const DashboardLayout = () => {
   return (
     <div>
       <div>
-        <ChatList />
-      </div>
-      <div>
         <Outlet />
       </div>
     </div>
