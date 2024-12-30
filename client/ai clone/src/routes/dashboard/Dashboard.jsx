@@ -46,15 +46,17 @@ const Dashboard = () => {
         </div>
 
         {/* Input Section */}
-        <div className="bg-white shadow-lg rounded-lg p-6 flex items-center space-x-4">
-          <input
-            type="text"
-            placeholder="Ask me anything..."
-            className="w-full p-4 text-lg text-gray-800 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
-          />
-          <button className="bg-indigo-900 p-1 rounded-full text-white hover:bg-indigo-600 transition duration-300">
-            <img src={arrowIcon} alt="Send" className="w-full object-contain" />
-          </button>
+        <div className="bg-white shadow-lg rounded-lg p-4 flex items-center space-x-4">
+          <div className="relative w-full">
+            <input
+              type="text"
+              placeholder="Ask me anything..."
+              className="w-full p-4 text-lg text-gray-800 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 pr-12" // Added padding-right for button space
+            />
+            <button className="absolute right-2 top-1/2 transform -translate-y-1/2 p-2 rounded-full text-white hover:scale-105 transition duration-300">
+              <img src={arrowIcon} alt="Send" className="object-contain" />
+            </button>
+          </div>
         </div>
       </div>
     </div>
