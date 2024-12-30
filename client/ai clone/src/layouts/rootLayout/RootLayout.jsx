@@ -13,17 +13,23 @@ const RootLayout = () => {
   return (
     <ClerkProvider publishableKey={PUBLISHABLE_KEY} afterSignOutUrl="/">
       <div>
-        <header>
-          <Link to="/">
-            <img src={logo} alt="" />
-            <span>Talkify</span>
+        <header className="flex items-center justify-between px-6 py-4 bg-gradient-to-r from-indigo-500 to-purple-600 shadow-md">
+          {/* Logo and App Name */}
+          <Link to="/" className="flex items-center space-x-3">
+            <img src={logo} alt="logo" className="w-10 h-10 object-contain" />
+            <span className="text-3xl font-bold text-white hover:text-yellow-400 transition duration-300">
+              Talkify
+            </span>
           </Link>
-          <div>
+
+          {/* User Button (Signed In) */}
+          <div className="flex items-center">
             <SignedIn>
-              <UserButton />
+              <UserButton className="bg-blue-600 text-white px-4 py-2 rounded-full text-lg font-semibold hover:bg-blue-700 transition duration-300" />
             </SignedIn>
           </div>
         </header>
+
         <main>
           <Outlet />
         </main>
