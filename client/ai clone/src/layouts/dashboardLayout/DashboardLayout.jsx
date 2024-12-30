@@ -1,6 +1,7 @@
 import { useAuth } from "@clerk/clerk-react";
 import { useEffect } from "react";
 import { Outlet, useNavigate } from "react-router-dom";
+import ChatList from "../../components/chatList/ChatList";
 
 const DashboardLayout = () => {
   //get authentication details from Clerk
@@ -16,7 +17,9 @@ const DashboardLayout = () => {
 
   return (
     <div>
-      <div>MENU</div>
+      <div>
+        <ChatList />
+      </div>
       <div>
         <Outlet />
       </div>
