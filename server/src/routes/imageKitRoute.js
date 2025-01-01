@@ -1,5 +1,5 @@
 const express = require("express");
-const { authenticateImageKit } = require("../controllers/imageKitController");
+const authenticateImageKit = require("../controllers/imageKitController");
 
 const router = express.Router();
 
