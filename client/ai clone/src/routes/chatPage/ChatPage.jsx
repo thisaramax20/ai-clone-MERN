@@ -56,6 +56,123 @@ const ChatPage = () => {
                 Text message from user
               </div>
             </li>
+            {/* <!-- AI Message --> */}
+            <li className="flex justify-start">
+              <div className="bg-blue-500 text-white p-4 rounded-lg max-w-xs">
+                Text message from AI
+              </div>
+            </li>
+
+            {/* <!-- User Message --> */}
+            <li className="flex justify-end">
+              <div className="bg-gray-200 text-gray-800 p-4 rounded-lg max-w-xs">
+                Text message from user
+              </div>
+            </li>
+            {/* <!-- AI Message --> */}
+            <li className="flex justify-start">
+              <div className="bg-blue-500 text-white p-4 rounded-lg max-w-xs">
+                Text message from AI
+              </div>
+            </li>
+
+            {/* <!-- User Message --> */}
+            <li className="flex justify-end">
+              <div className="bg-gray-200 text-gray-800 p-4 rounded-lg max-w-xs">
+                Text message from user
+              </div>
+            </li>
+            {/* <!-- AI Message --> */}
+            <li className="flex justify-start">
+              <div className="bg-blue-500 text-white p-4 rounded-lg max-w-xs">
+                Text message from AI
+              </div>
+            </li>
+
+            {/* <!-- User Message --> */}
+            <li className="flex justify-end">
+              <div className="bg-gray-200 text-gray-800 p-4 rounded-lg max-w-xs">
+                Text message from user
+              </div>
+            </li>
+            {/* <!-- AI Message --> */}
+            <li className="flex justify-start">
+              <div className="bg-blue-500 text-white p-4 rounded-lg max-w-xs">
+                Text message from AI
+              </div>
+            </li>
+
+            {/* <!-- User Message --> */}
+            <li className="flex justify-end">
+              <div className="bg-gray-200 text-gray-800 p-4 rounded-lg max-w-xs">
+                Text message from user
+              </div>
+            </li>
+            {/* <!-- AI Message --> */}
+            <li className="flex justify-start">
+              <div className="bg-blue-500 text-white p-4 rounded-lg max-w-xs">
+                Text message from AI
+              </div>
+            </li>
+
+            {/* <!-- User Message --> */}
+            <li className="flex justify-end">
+              <div className="bg-gray-200 text-gray-800 p-4 rounded-lg max-w-xs">
+                Text message from user
+              </div>
+            </li>
+            {/* <!-- AI Message --> */}
+            <li className="flex justify-start">
+              <div className="bg-blue-500 text-white p-4 rounded-lg max-w-xs">
+                Text message from AI
+              </div>
+            </li>
+
+            {/* <!-- User Message --> */}
+            <li className="flex justify-end">
+              <div className="bg-gray-200 text-gray-800 p-4 rounded-lg max-w-xs">
+                Text message from user
+              </div>
+            </li>
+            {/* <!-- AI Message --> */}
+            <li className="flex justify-start">
+              <div className="bg-blue-500 text-white p-4 rounded-lg max-w-xs">
+                Text message from AI
+              </div>
+            </li>
+
+            {/* <!-- User Message --> */}
+            <li className="flex justify-end">
+              <div className="bg-gray-200 text-gray-800 p-4 rounded-lg max-w-xs">
+                Text message from user
+              </div>
+            </li>
+            {/* <!-- AI Message --> */}
+            <li className="flex justify-start">
+              <div className="bg-blue-500 text-white p-4 rounded-lg max-w-xs">
+                Text message from AI
+              </div>
+            </li>
+
+            {/* <!-- User Message --> */}
+            <li className="flex justify-end">
+              <div className="bg-gray-200 text-gray-800 p-4 rounded-lg max-w-xs">
+                Text message from user
+              </div>
+            </li>
+            {/* <!-- AI Message --> */}
+            <li className="flex justify-start">
+              <div className="bg-blue-500 text-white p-4 rounded-lg max-w-xs">
+                Text message from AI
+              </div>
+            </li>
+
+            {/* <!-- User Message --> */}
+            <li className="flex justify-end">
+              <div className="bg-gray-200 text-gray-800 p-4 rounded-lg max-w-xs">
+                Text message from user
+              </div>
+            </li>
 
             <NewPrompt />
 
