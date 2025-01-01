@@ -36,7 +36,7 @@ const ChatList = () => {
         </span>
         <div className="mt-4 space-y-3">
           <Link
-            to="/chat"
+            to="/dashboard/chats/:id"
             className="block text-lg text-gray-600 hover:text-indigo-500 hover:underline transition duration-300"
           >
             Chat 1

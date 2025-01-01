@@ -16,8 +16,11 @@ const DashboardLayout = () => {
   }, [isLoaded, userId, navigate]);
 
   return (
-    <div>
+    <div className="grid grid-cols-1 md:grid-cols-2">
       <div>
+        <ChatList />
+      </div>
+      <div className="">
         <Outlet />
       </div>
     </div>
