@@ -26,10 +26,13 @@ const NewPrompt = () => {
   const askGemini = async (question) => {
     const prompt = question;
 
-    const result = await model.generateContent(
+    const result = await model.generateContentStream(
       Object.entries(img.aiData).length ? [img.aiData, prompt] : prompt
     );
-    setAnswer(result.response.text());
+    for await (const chunk of result.stream) {
+      const chunkText = chunk.text();
+      setAnswer((prev) => prev + chunkText);
+    }
   };
 
   const handleSubmit = async (e) => {
