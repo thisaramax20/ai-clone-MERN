@@ -39,8 +39,22 @@ const Upload = ({ setImg }) => {
   };
 
   const onUploadStart = (evt) => {
-    console.log("Start", evt);
-    setImg((prev) => ({ ...prev, isLoading: true }));
+    const file = evt.target.files[0];
+
+    const reader = new FileReader();
+    reader.onloadend = () => {
+      setImg((prev) => ({
+        ...prev,
+        isLoading: true,
+        aiData: {
+          inlineData: {
+            data: reader.result.split(",")[1],
+            mimeType: file.type,
+          },
+        },
+      }));
+    };
+    reader.readAsDataURL(file);
   };
 
   return (
@@ -56,10 +70,11 @@ const Upload = ({ setImg }) => {
         onSuccess={onSuccess}
         useUniqueFileName={true}
         style={{ display: "none" }}
+        onUploadStart={onUploadStart}
         ref={imgKitRef}
       />
       <label
-        onClick={() => imgKitRef.current.click}
+        onClick={() => imgKitRef.current.click()}
         htmlFor="file"
         className="absolute left-4 top-1/2 transform -translate-y-1/2 cursor-pointer"
       >

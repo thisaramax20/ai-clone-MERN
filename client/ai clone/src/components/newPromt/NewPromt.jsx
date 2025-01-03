@@ -13,6 +13,7 @@ const NewPrompt = () => {
     isLoading: false,
     err: "",
     dbData: {},
+    aiData: {},
   });
 
   //select final message when rendering
@@ -25,7 +26,9 @@ const NewPrompt = () => {
   const askGemini = async (question) => {
     const prompt = question;
 
-    const result = await model.generateContent(prompt);
+    const result = await model.generateContent(
+      Object.entries(img.aiData).length ? [img.aiData, prompt] : prompt
+    );
     setAnswer(result.response.text());
   };
 
